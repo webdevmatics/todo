@@ -17,18 +17,18 @@ Route::get('/', function () {
 
 Route::resource('tasks','TasksController');
 
-// this will generate following routes
+/****  this will generate following routes */
 
-// Route::get('/tasks','TasksController@index');
+// Route::get('/tasks','TasksController@index');                    //displays all tasks
 
-// Route::get('/tasks/create','TasksController@create');
+// Route::get('/tasks/create','TasksController@create');            //displays create form
 
-// Route::post('/tasks','TasksController@store');
+// Route::post('/tasks','TasksController@store');                   //submits data from create form
 
-// Route::get('/tasks/{task}','TasksController@show');
+// Route::get('/tasks/{task}','TasksController@show');              //shows single task
 
-// Route::get('/tasks/edit/{task}','TasksController@edit');
+// Route::get('/tasks/{task}/edit','TasksController@edit');          //displays edit form
 
-// Route::put('/tasks/{task}','TasksController@update');
+// Route::put('/tasks/{task}','TasksController@update');            //submits edit form data
 
-// Route::delete('/tasks/{task}', 'TasksController@destroy');
+// Route::delete('/tasks/{task}', 'TasksController@destroy');       //deletes

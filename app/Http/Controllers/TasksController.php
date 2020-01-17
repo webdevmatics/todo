@@ -43,7 +43,8 @@ class TasksController extends Controller
         $task->name=request('name');
         $task->save();
         
-        return redirect('/tasks');
+        // return redirect('/tasks');
+        return redirect()->route('tasks.index');
     }
 
     /**
